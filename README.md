@@ -1,2 +1,8 @@
 # jcc-phase3-week3
-It contains my materials for present to nodejs jcc student on phase 3 week 3 session
+Halo, selamat datang di repository ini. Repository ini berisi materi yang akan digunakan oleh peserta Jabar Coding Camp(JCC) di Fase 3, Minggu ke-3.
+
+Materi ini berisi:
+
+* [Day #1 - Introduction into Microservices](./day-1)
+* Day #2 - Api Gateway & Microservices Deployment
+* Day #3 - Kubernetes
