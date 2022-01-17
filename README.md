@@ -4,5 +4,5 @@ Halo, selamat datang di repository ini. Repository ini berisi materi yang akan d
 Materi ini berisi:
 
 * [Day #1 - Introduction into Microservices](./day-1)
-* Day #2 - Api Gateway & Microservices Deployment
+* [Day #2 - Api Gateway & Microservices Deployment](./day-2)
 * Day #3 - Kubernetes
