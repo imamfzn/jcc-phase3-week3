@@ -5,4 +5,4 @@ Materi ini berisi:
 
 * [Day #1 - Introduction into Microservices](./day-1)
 * [Day #2 - Api Gateway & Microservices Deployment](./day-2)
-* Day #3 - Kubernetes
+* [Day #3 - Kubernetes](./day-3)
