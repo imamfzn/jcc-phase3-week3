@@ -115,7 +115,7 @@ Kalau kalian lihat pada file `ingress.yml`, `ingress` akan menerima traffic dari
 Lakukan perintah (pastikan di wsl)
 
 ```bash
-sudo echo "127.0.0.1 api.simple.local"
+echo "127.0.0.1 api.simple.local" | sudo tee -a /etc/hosts
 ```
 
 Apabila sudah, sekarang coba buka browser / lakukan perintah berikut untuk melakukan hit api pada service `simple-crud` lewat ingress yang sudah dibuat:
