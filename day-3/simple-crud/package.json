@@ -24,6 +24,7 @@
     "express-winston": "^4.2.0",
     "mongoose": "^6.1.5",
     "winston": "^3.3.3",
-    "winston-express": "^0.1.1"
+    "winston-express": "^0.1.1",
+    "colors": "1.4.0"
   }
 }
