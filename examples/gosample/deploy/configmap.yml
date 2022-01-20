@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gosample
+data:
+  MONGODB_URL: mongodb://192.168.109.2:27017
+  MAX_LOOP: "300009"

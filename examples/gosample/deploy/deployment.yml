@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gosample
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gosample
+  template:
+    metadata:
+      labels:
+        app: gosample
+    spec:
+      containers:
+      - name: app
+        image: jcc/kubernetes/gosample:0.2
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: gosample
+        resources:
+          limits:
+            cpu: 100m
+            memory: 64M
+          requests:
+            cpu: 50m
+            memory: 32M
