@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: gosample:0.1
+        image: jcc/kubernetes/gosample:0.1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
@@ -24,7 +24,7 @@ spec:
         resources:
           limits:
             cpu: 100m
-            memory: 64m
+            memory: 64M
           requests:
             cpu: 50m
-            memory: 32m
+            memory: 32M

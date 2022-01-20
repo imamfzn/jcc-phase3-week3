@@ -4,10 +4,28 @@ import (
     "encoding/json"
     "log"
     "math/rand"
+    "os"
+    "strconv"
 
     "github.com/gofiber/fiber/v2"
     "github.com/gofiber/fiber/v2/middleware/logger"
+    "github.com/subosito/gotenv"
 )
+
+var maxLoop int
+
+func init() {
+    gotenv.Load()
+
+    maxLoopStr := os.Getenv("MAX_LOOP")
+    if maxLoopStr == "" {
+        maxLoopStr = "1000"
+    }
+
+    maxLoop, _ = strconv.Atoi(maxLoopStr)
+
+    log.Printf("MAX_LOOP = %d", maxLoop)
+}
 
 type SimpleResult struct {
     Message string `json:"message"`
@@ -20,7 +38,7 @@ const (
 func aHeavyTask() {
     var res uint64 = 1
 
-    for i := 1; i <= MAX_ITER; i++ {
+    for i := 1; i <= maxLoop; i++ {
         res = (res % rand.Uint64()) * (uint64(i) % rand.Uint64())
     }
 }

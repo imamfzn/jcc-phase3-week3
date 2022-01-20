@@ -1,9 +1,8 @@
 .PHONY: compile build run
 
-IMAGE        = jcc/kubernetes/gosample
-VERSION      = 0.1
-ODIR        := _output
-
+ODIR      := _output
+IMAGE     = jcc/kubernetes/gosample
+VERSION   ?= $(shell git show -q --format=%h)
 
 $(ODIR):
 	@mkdir -p $(ODIR)

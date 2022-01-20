@@ -2,7 +2,10 @@ module gosample
 
 go 1.17
 
-require github.com/gofiber/fiber/v2 v2.24.0
+require (
+	github.com/gofiber/fiber/v2 v2.24.0
+	github.com/subosito/gotenv v1.2.0
+)
 
 require (
 	github.com/andybalholm/brotli v1.0.2 // indirect
