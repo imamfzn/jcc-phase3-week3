@@ -5,4 +5,4 @@ class SimpleTest(HttpUser):
 
     @task
     def test(self):
-      self.client.get("http://localhost:3000/test")
+      self.client.get("http://api.simple.local/test", timeout=30)

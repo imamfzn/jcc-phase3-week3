@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: jcc/kubernetes/gosample:0.1
+        image: jcc/kubernetes/gosample:0.2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000

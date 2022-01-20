@@ -31,10 +31,6 @@ type SimpleResult struct {
     Message string `json:"message"`
 }
 
-const (
-    MAX_ITER = 9000007
-)
-
 func aHeavyTask() {
     var res uint64 = 1
 
