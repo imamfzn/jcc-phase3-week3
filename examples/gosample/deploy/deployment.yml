@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gosample
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: gosample
+  template:
+    metadata:
+      labels:
+        app: gosample
+    spec:
+      containers:
+      - name: app
+        image: gosample:0.1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: gosample
+        resources:
+          limits:
+            cpu: 100m
+            memory: 64m
+          requests:
+            cpu: 50m
+            memory: 32m
